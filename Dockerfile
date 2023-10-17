@@ -1,5 +1,8 @@
 FROM amazoncorretto:21
 
+COPY ./volumen/Main.java
+
 WORKDIR ./java-test
 
-ENTRYPOINT ["bash"]
+RUN 
+ENTRYPOINT ["java","Main"]
